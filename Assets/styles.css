@@ -1,0 +1,64 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+
+  li {
+    display: inline;
+  }
+
+body {
+    background-image: url("webpageBG.jpg");
+    background-color: #7577ff;
+}
+
+header {
+    border-radius: 0px 0px 30px 30px;
+    width: 70%;
+    height: 20%;
+    background-image: url("headerBG.png");
+    background-repeat: no-repeat;
+}
+
+h1 { 
+    position: relative;
+    top: 30%;
+    left: 10%;
+}
+
+nav {
+    background: radial-gradient(ellipse at top, #64bde6, transparent),
+            radial-gradient(ellipse at bottom, #0c279f, transparent);
+    
+    border-radius: 5px;
+    position: relative;
+    float: right;
+    right: 10%;
+    top: 60%;
+}
+
+nav a{
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+}
+
+section {
+    border: 5px groove green;
+    border-radius: 10px;
+}
+
+footer {
+    float: right;
+    margin-right: 10%;
+}
