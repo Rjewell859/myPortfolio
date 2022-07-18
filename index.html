@@ -2,14 +2,15 @@
 
 <head>
     <title>Portfolio</title>
-    <meta charset="UTF-8">
-    <link href="Assets/styles.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="Assets/styles.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 
     <header>
-        <h1>Ryan Jewell</h1>
+        <h1>My Portfolio</h1>
         <nav>
             <ul>
                 <li><a href="#about">About Me</a></li>
@@ -20,62 +21,96 @@
     </header>
 
     <main>
-        <picture>
+        <section>
+            <picture>
+                <h2>Ryan Jewell</h2>
+                <img src="Assets/images/selfPicture.JPG" alt="Picture of Ryan Jewell hiking at Wildcat Mountain"
+                    width="20%" class="float-left">
 
-            <img src="Assets/selfPicture.JPG" alt="Picture of Ryan Jewell hiking at Wildcat Mountain" width="20%">
 
+            </picture>
+        </section>
+        <section id="about" class="float-right">
+            <h3>About Me: </h3>
+            <p>Hello, my name is Ryan Jewell. I am an aspiring computer programmer currently studying web design. When
+                it comes to wokrking with computers, I always tend to have a very methodical approach, however
+                determined I may be to get
+                something done as soon as possible. Through college and self teaching I have recently accumulated
+                experience working with
+                Linux, Java, Python, SQL, C++, and now the fundamental languages of website design: HTML, CSS and
+                JavaScript. My favorite hobby will always be torn
+                between playing guitar and snowboarding. During the summer months I find myself keeping busy outdoors
+                gardening, landscaping and taking pictures on hikes.</p>
 
-        </picture>
-        <section id="about">
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Sem integer vitae justo eget magna. Tristique nulla aliquet enim tortor at auctor
-                urna nunc id. Laoreet id donec ultrices tincidunt arcu non sodales neque sodales. Vestibulum lectus
-                mauris ultrices eros. Sit amet aliquam id diam maecenas. Volutpat sed cras ornare arcu dui vivamus arcu.
-                Diam quis enim lobortis scelerisque fermentum. Faucibus et molestie ac feugiat sed lectus vestibulum
-                mattis. Tempus quam pellentesque nec nam aliquam sem. Sit amet mauris commodo quis imperdiet. Quam
-                viverra orci sagittis eu volutpat odio. Nulla facilisi nullam vehicula ipsum a. Vel elit scelerisque
-                mauris pellentesque pulvinar pellentesque.</p>
 
         </section>
 
         <section id="work">
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Sem integer vitae justo eget magna. Tristique nulla aliquet enim tortor at auctor
-                urna nunc id. Laoreet id donec ultrices tincidunt arcu non sodales neque sodales. Vestibulum lectus
-                mauris ultrices eros. Sit amet aliquam id diam maecenas. Volutpat sed cras ornare arcu dui vivamus arcu.
-                Diam quis enim lobortis scelerisque fermentum. Faucibus et molestie ac feugiat sed lectus vestibulum
-                mattis. Tempus quam pellentesque nec nam aliquam sem. Sit amet mauris commodo quis imperdiet. Quam
-                viverra orci sagittis eu volutpat odio. Nulla facilisi nullam vehicula ipsum a. Vel elit scelerisque
-                mauris pellentesque pulvinar pellentesque.
-            
-            <a><img></img></a>
-            <a><img></img></a>
-            <a><img></img></a>
-            <a><img></img></a>
-
+            <h3>My Projects: </h3>
+            <p>Here is a collection of my work.
             </p>
+            <div id="firstApplication">
+                <h3>Horiseon website</h3>
+                <a href="https://rjewell859.github.io/horiseonRefactor/"><img
+                        src="Assets/images/horiseonpicture.JPG"></img></a>
+            </div>
+            <p>This was a basic code refactoring project to fix the website and organize code.</p>
+            <div>
+                <h3>Photo Gallery</h3>
+                <a href="#"><img src="Assets/images/photoGallery.jpg"></img></a>
+                <p>A simple website for storing and viewing photos from my collection.</p>
+
+            </div>
+            <div>
+                <h3>Instrument Tuner</h3>
+                <a href="#"><img src="Assets/images/tunerInstrument.jpg"></img></a>
+            </div>
+            <p>A website featuring my project and how to build a functional musical tuner with the basic stamp.</p>
+
+            <a><img></img></a>
+            <a><img></img></a>
+
+
 
         </section>
         <section id="contact">
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Sem integer vitae justo eget magna. Tristique nulla aliquet enim tortor at auctor
-                urna nunc id. Laoreet id donec ultrices tincidunt arcu non sodales neque sodales. Vestibulum lectus
-                mauris ultrices eros. Sit amet aliquam id diam maecenas. Volutpat sed cras ornare arcu dui vivamus arcu.
-                Diam quis enim lobortis scelerisque fermentum. Faucibus et molestie ac feugiat sed lectus vestibulum
-                mattis. Tempus quam pellentesque nec nam aliquam sem. Sit amet mauris commodo quis imperdiet. Quam
-                viverra orci sagittis eu volutpat odio. Nulla facilisi nullam vehicula ipsum a. Vel elit scelerisque
-                mauris pellentesque pulvinar pellentesque.</p>
+            <h3>Contact Me: </h3>
+            <p>Please leave your name, a message and email. I will do my best to get back to you as soon as possible.
+            </p>
+            <form action="https://wp.zybooks.com/form-viewer.php" method="get" id="contactform">
+                <div><label for="fullname">Name:</label>
+                    <input type="text" id="fullname"></div>
+
+                <div><label for="message">Message:</label>
+                    <textarea id="message"></textarea></div>
+
+                <div><label for="email">Email:</label>
+                    <input type="email" id="email"></div>
+
+                <div><input type="submit" id="submit" value="Click to submit"></div>
+
+                <div><label for="consent">I agree to receive emails via this email: </label>
+                    <input type="checkbox" id="consent">
+                </div>
+            </form>
+
+            <ul id="contactLinks">
+
+                <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+                <li><a href="https://twitter.com/?lang=en">Twitter</a></li>
+                <li><a href="https://www.instagram.com/?hl=en">Instagram</a></li>
+                <li><a href="mailto:headwallforest27@gmail.com">headwallforest27@gmail.com</a></li>
+            </ul>
 
         </section>
     </main>
 
     <footer>
-         Copyright &copy; 2022, Ryan Jewell   
-
+        Copyright &copy; 2022, Ryan Jewell
     </footer>
+    <script src="main.js"></script>
+
 
 
 

@@ -1,64 +1,192 @@
 html {
-    box-sizing: border-box;
-    font-size: 16px;
-  }
-  
-  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-  }
-  
-  ol, ul {
-    list-style: none;
-  }
+  box-sizing: border-box;
+  font-size: 16px;
+}
 
-  li {
-    display: inline;
-  }
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5%;
+
+}
 
 body {
-    background-image: url("webpageBG.jpg");
-    background-color: #7577ff;
+  margin: 20px;
+  background-image: url("images/webpageBG.jpg");
+  background-color: #7577ff;
 }
+
 
 header {
-    border-radius: 0px 0px 30px 30px;
-    width: 70%;
-    height: 20%;
-    background-image: url("headerBG.png");
-    background-repeat: no-repeat;
+  border-radius: 0px 0px 30px 30px;
+  width: 70%;
+  height: 20%;
+  background-image: url("images/headerBG.png");
+  background-repeat: no-repeat;
 }
 
-h1 { 
-    position: relative;
-    top: 30%;
-    left: 10%;
+h1 {
+  position: relative;
+  top: 30%;
+  left: 10%;
 }
 
 nav {
-    background: radial-gradient(ellipse at top, #64bde6, transparent),
-            radial-gradient(ellipse at bottom, #0c279f, transparent);
-    
-    border-radius: 5px;
-    position: relative;
-    float: right;
-    right: 10%;
-    top: 60%;
+  background: radial-gradient(ellipse at top, #64bde6, transparent),
+    radial-gradient(ellipse at bottom, #0c279f, transparent);
+
+  border-radius: 5px;
+  position: relative;
+  float: right;
+  height: 15%;
+  right: 15%;
+  top: 60%;
 }
 
-nav a{
-    text-decoration: none;
-    margin: 10px;
-    color: white;
+nav a {
+  text-decoration: none;
+  margin: 10px;
+  color: white;
 }
 
 section {
-    border: 5px groove green;
-    border-radius: 10px;
+  flex: 1 1 0;
+  height: fit-content;
+  padding: 10px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border: 5px groove green;
+  border-radius: 10px;
+}
+
+section h3 {
+  padding: 20px;
+  background: #13293d;
+  color: #fff;
+}
+
+div h3 {
+  background: #0a3bc4;
+  border-radius: 5px;
+  color: #fff;
+
+}
+
+div {
+  width: 50%;
+}
+
+#firstApplication {
+  width: 100%;
+}
+
+section img {
+  width: 100%;
+  min-width: 400px;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
 }
 
 footer {
-    float: right;
-    margin-right: 10%;
+  float: right;
+  font-family: Helvetica;
+  font-weight: 500;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.7);
+  margin-right: 10%;
+}
+
+main h2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 60px;
+  background: #13293d;
+  color: #fff;
+}
+
+a:hover {
+  color: aquamarine;
+}
+
+input,
+textarea {
+  margin-top: 25px;
+  font-size: 13px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  margin-left: 25px;
+}
+
+#contactLinks a {
+  text-decoration: none;
+  background: radial-gradient(ellipse at top, #64bde6, transparent),
+    radial-gradient(ellipse at bottom, #0c279f, transparent);
+  border-radius: 2px;
+  color: white;
+}
+
+#message {
+  margin-top: 15px;
+  vertical-align: middle;
+}
+
+#consent {
+  width: 30px;
+  box-shadow: none;
+}
+
+#consent:hover,
+#submit:hover {
+  color: cornflowerblue;
+}
+
+#submit {
+  font-family: Verdana;
+  border-style: outset;
+  border-color: darkcyan;
+  border-radius: 3px;
+  width: 150px;
+}
+
+#errors {
+  color: red;
+  font-weight: bold;
+}
+
+section img:hover {
+  opacity: 0.6;
 }
