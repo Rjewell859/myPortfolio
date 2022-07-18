@@ -229,6 +229,7 @@ textarea {
   width: 100%;
 }
 
+/* Sets header to span across the screen on mobile devices */
 @media screen and (max-width: 768px) {
   header {
     width: 100%;
