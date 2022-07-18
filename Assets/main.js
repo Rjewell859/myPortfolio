@@ -1,4 +1,4 @@
-// This form validation is not a functional part of the website yet.
+// This form validation is not an entirely functional part of the website yet.
 
 var fullName = document.getElementById('fullname');
 var message = document.getElementById('message');
