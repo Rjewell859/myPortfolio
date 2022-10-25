@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="main.css" rel="stylesheet">
+    <link href="mobile.css" rel="stylesheet"
+        media="only screen and (max-width: 480px), only screen and (max-device-width: 480px)">
+</head>
+
+<body class="contact">
+
+    <header>
+        <h1><a href="index.html">Ryan Jewell</a></h1>
+        <h2>Contact Page</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="bio.html">Bio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h3>Reach Me:</h3>
+        <p>Please leave your name, a message and email. I will do my best to get back to you as soon as possible.</p>
+        <form action="https://wp.zybooks.com/form-viewer.php" method="post" id="contactform">
+            <div><label for="fullname">Name:</label>
+                <input type="text" id="fullname"></div>
+
+            <div><label for="message">Message:</label>
+                <textarea id="message"></textarea></div>
+
+            <div><label for="email">Email:</label>
+                <input type="email" id="email"></div>
+
+            <div><input type="submit" id="submit" value="Click to submit"></div>
+
+            <div><label for="consent">I agree to receive emails via this email: </label>
+                <input type="checkbox" id="consent">
+            </div>
+        </form>
+        <div id="errors"></div>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+                <li><a href="https://twitter.com/?lang=en">Twitter</a></li>
+                <li><a href="https://www.instagram.com/?hl=en">Instagram</a></li>
+                <li><a href="mailto:rjewell859@students.ccsnh.edu">rjewell859@students.ccsnh.edu</a></li>
+            </ul>
+            <div id="copyright">&copy; Copyright 2022, Ryan Jewell. All rights reserved.</div>
+        </nav>
+    </footer>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

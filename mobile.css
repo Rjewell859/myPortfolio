@@ -1,0 +1,57 @@
+background {
+    width: 100%
+}
+
+header {
+    background:blue;
+    margin:0;
+    padding:0;
+    color:white;
+    border:1px solid black;    
+}
+
+body {
+    margin:0;
+    padding:0;
+    background-size: 150%;
+    background-repeat: repeat-y
+}
+
+main {
+    width:80%;
+    margin-left:20%;
+}
+
+p {
+    font-size: 15px;    
+}
+
+.post {
+    width: 70%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+body > #container > nav {
+    width:100%;
+}
+
+#copyright {
+    font-size: 50%;
+}
+
+@media only screen and (max-width:850px) {
+    body > #container > nav {
+        float:none; 
+        width:100%; 
+    }
+    main {
+        margin-left:0;
+        width:100%;
+    }
+    img {
+        width:50%;
+    }
+}
+
